@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}
+     Home page
+{% endblock %}
+{% block main %}
+    <form action="/index" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="name" placeholder="name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto"  name="weight" placeholder="weight" type="number">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto"  name="age" placeholder="age" type="number">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto"  name="height" placeholder="heigh in cm" type="number">
+        </div>
+        <div class="mb-3">
+            <select name="Gender">
+                <option disable selected>Gender</option>
+                <option>male</option>
+                <option>female</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <select name="daily_in_take">
+                <option disable selected>DR</option>
+                <option>little to no</option>
+                <option>light 1 to 3</option>
+                <option>moderate 3 to 5</option>
+                <option>heavy 6 to 7</option>
+                <option>very heavy twice per day</option>
+
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">calculate</button>
+    </form>
+{% endblock %}

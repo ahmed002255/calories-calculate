@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    home page
+{% endblock %}
+
+
+{% block main %}
+            <head>
+                <ul class="navbar-nav ms-auto mt-2">
+                    <li class="nav-item"><a class="nav-link" href="/logout">Log out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index">calculate</a></li>
+                </ul>
+            </head>
+        <body>
+            <table>
+                <tr>
+                    <th>name</th>
+                </tr>
+                <tr>
+                    <td>{{ name }}</td>
+                </tr>
+            </table>
+        </body>
+
+
+{% endblock %}
